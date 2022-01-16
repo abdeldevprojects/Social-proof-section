@@ -114,14 +114,12 @@ p {
 @media (min-width : 980px) {
 
     body {
-        background-image: url("images/bg-pattern-top-desktop.svg");
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
         background-repeat: no-repeat;
+        background-position: left 0 top 0, right 0 bottom 0;
     }
 
     main {
-        background-image: url(images/bg-pattern-bottom-desktop.svg);
-        background-repeat: no-repeat;
-        background-position: right bottom;
         margin: 7em 4em;
     }
 
@@ -141,35 +139,34 @@ p {
 
 /*************************************************/
 
-    .stars-section {
-        display: flex;
-        flex-direction: column;
+    /* .stars-section {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* text-align: center; */
         /* align-items: center;
         justify-content: center;
-         */
-    }
+         
+    }*/
 
     .fivestars {
         display: flex;
         align-items: center;
-        justify-content: space-around;
         padding: 1em;
     }
 
+    .fivestars p {
+        padding: 10px;
+    }
+
+    .fivestars .stars {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
     .stars img {
-        margin-right: .4em;
-    }
-
-    .five-stars-one {
-        margin-left: 100px;
-    }
-
-    .five-stars-two {
-        margin-left: 120px;
-    }
-
-    .five-stars-three {
-        margin-left: 140px;
+        /* margin-right: .4em; */
+        padding: 5px;
     }
 
 /*************************************************/
@@ -184,10 +181,14 @@ p {
 }
 
 @media (min-width : 1300px) {
-    main {
-        background-image: url(images/bg-pattern-bottom-desktop.svg);
+
+    body {
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
         background-repeat: no-repeat;
-        background-position: right bottom;
+        background-position: left 0 top 0, right 0 bottom 0;
+    }
+
+    main {
         margin: 7em 10em;
     }
     
