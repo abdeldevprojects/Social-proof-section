@@ -153,9 +153,11 @@ p {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        max-width: 500px;
-        min-width: 400px;
-        /* margin-left: 100px; */
+        padding: 1em;
+    }
+
+    .stars img {
+        margin-right: .4em;
     }
 
     .five-stars-one {
@@ -175,11 +177,9 @@ p {
   .clients-feedback {
       display: flex;
       gap: 1em;
-      padding-bottom: 20em;
       width: 100%;
       margin-top: 8em;
   }
-
  
 }
 
