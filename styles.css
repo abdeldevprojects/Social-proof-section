@@ -151,17 +151,24 @@ p {
     .fivestars {
         display: flex;
         align-items: center;
-        padding: 1em;
+        padding: 50px;
+        width: 100%;
     }
 
-    .fivestars p {
-        padding: 10px;
-    }
+
 
     .fivestars .stars {
         padding: 5px;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
+    }
+
+    .five-stars-one {
+        margin-left: -80px;
+    }
+
+    .five-stars-two {
+        margin-left: -40px;
     }
 
     .stars img {
@@ -173,11 +180,22 @@ p {
 
   .clients-feedback {
       display: flex;
-      gap: 1em;
+      gap: 1.5em;
       width: 100%;
       margin-top: 8em;
   }
+
+  .card {
+      height: 80%;
+  }
+
+  .card-two {
+      margin-top: 30px;
+  }
  
+  .card-three {
+    margin-top: 60px;
+}
 }
 
 @media (min-width : 1300px) {
